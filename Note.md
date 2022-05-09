@@ -2,9 +2,9 @@
 
 
 
-##理念/哲学（Philosophy）
+## 理念/哲学（Philosophy）
 
-###P.1 **用代码直接表达思想（Express ideas directly in code）**
+### P.1 **用代码直接表达思想（Express ideas directly in code）**
 
 **理由**：编译器不会阅读注释(或设计文档)，许多程序员(一般)也不会。相比之下，（原则上）如果你在代码中明确地表达了/定义了相关的内容，那么可以由编译器和其他工具进行检查。
 
