@@ -10,7 +10,7 @@
 
 2.该文档英文原地址：[https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines "CppCoreGuidelines")；
 
-3.本笔记[https://github.com/ProgrammerAaronXu/Note-for-C-plus-plus-Core-Guidelines/blob/main/Note.md#note-for-c-plus-plus-core-guidelines]***不包含***原文所有案例，仅列举个人觉得重要的部分。建议大家有条件的话，直接看原英文文档；
+3.本笔记https://github.com/ProgrammerAaronXu/Note-for-C-plus-plus-Core-Guidelines/blob/main/Note.md#note-for-c-plus-plus-core-guidelines***不包含***原文所有案例，仅列举个人觉得重要的部分。建议大家有条件的话，直接看原英文文档；
 
 4.共同进步，共同成长（努力转行中的机械人）；
 
