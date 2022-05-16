@@ -81,3 +81,51 @@
 
 **【强制执行（Enforcement）】**：
 - **使用最新的c++编译器(目前是c++ 20或c++ 17)，（这样的编译器）带有一组不接受扩展的选项。**
+### P.3 表达意图/目的(Express intent)
+
+**理由**：除非某些代码的意图/目的被声明(例如，在名称或注释中)，否则不可能知道代码是否做了它应该做的事情。
+
+**e.g:**
+	
+	//不好的例子，因为我们无法变量v的意图（需要对其修改，还是仅仅取值，还是...）
+	gsl::index i = 0;
+	while (i < v.size()) {
+	// ... do something with v[i] ...
+	}
+
+
+**e.g.:**
+
+    //更好的例子1，说明了v的值不能修改
+    for (const auto& x : v) { /* do something with the value of x */ }
+    for (auto& x : v) { /* modify x */ }//需要修改则使用不带const的变量
+
+有时候，用命名的（named）算法会更好。例如for_each，它直接表达了使用的意图/目的：
+
+    for_each(v, [](int x) { /* do something with the value of x */ });
+    //表明，我们对v的处理顺序并不关心
+    for_each(par, v, [](int x) { /* do something with the value of x */ });
+
+**一个程序员，应当对以下内容熟悉：**
+
+  - 该指南所支持的库
+  - ISO C++标准库
+  - 当前项目所使用的任何基础库
+ 
+**批注**：思维切换（Alternative formulation）：说我们应该做什么，而不是某件事应该如何做。
+
+**批注**：相对于其他语言结构，有些语言结构更能够表达（函数/方法）的意图。
+
+**e.g.**：如果两个int类型被用来表示坐标，那么可以这样表示：
+
+    draw_line(int, int, int, int); // 很模糊，你无法明白这四个int是干嘛的
+    draw_line(Point, Point); // 很清晰，我知道有两个点（Point）对象
+
+
+**【强制执行（Enforcement）】**：**代码的优化和半自动化空间依然很大**：用一些更好的方法去替代常见的一些模式
+  
+  - 简单的**for**循环 vs. **range-for**循环
+  - f(T*,int)接口 vs. f(span<T>)接口
+  - 在太大的范围内循环变量
+  - 裸露的new和delete（个人推荐开始学习用智能指针，非作者建议）
+  - 具有许多内置类型的函数
