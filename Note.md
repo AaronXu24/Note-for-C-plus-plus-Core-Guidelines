@@ -1,8 +1,12 @@
 # Note-for-C-plus-plus Core-Guidelines
 
- @[TOC]
-
-
+- [Note-for-C-plus-plus Core-Guidelines](#note-for-c-plus-plus-core-guidelines)
+  * [理念/哲学（Philosophy）](#------philosophy-)
+    + [P.1 **用代码直接表达思想（Express ideas directly in code）**](#p1-------------express-ideas-directly-in-code---)
+    + [P.2 用ISO的C++标准写代码（Write in ISO Standard C++）](#p2--iso-c--------write-in-iso-standard-c---)
+    + [P.3 （代码应明确地）表达意图/目的(Express intent)](#p3-----------------express-intent-)
+    + [P.4 理想情况下，程序应该是静态类型安全的（Ideally, a program should be statically type safe）](#p4--------------------ideally--a-program-should-be-statically-type-safe-)
+    + [P.5 优先选择编译时检查而不是运行时检查（Prefer compile-time checking to run-time checking）](#p5-------------------prefer-compile-time-checking-to-run-time-checking-)
 
 ## 理念/哲学（Philosophy）
 
