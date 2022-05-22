@@ -6,7 +6,7 @@
 
 【注】：
 
-1.所有笔记，均为个人翻译结果，若有错误，欢迎指出：）；
+1.所有笔记，均为个人翻译以及个人理解的结果，若有错误，欢迎指出：）；
 
 2.该文档英文原地址：[https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines "CppCoreGuidelines")；
 
